@@ -3,7 +3,7 @@ rm -f instala.*
 echo -e "ESPERE UN MOMENTO"
 [[ $(dpkg --get-selections|grep -w "curl"|head -1) ]] || apt-get install curl -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "pv"|head -1) ]] || apt-get install pv -y &>/dev/null
-source <(curl -sSL https://raw.githubusercontent.com/gugajs/VPS-MX_Oficial/master/msg-bar/msg)
+source <(curl -sSL https://raw.githubusercontent.com/gugajs/VPS-MX_Oficial/main/msg-bar/msg)
 COLS=$(tput cols)
 function printTitle
 {
